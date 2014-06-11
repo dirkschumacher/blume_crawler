@@ -1,0 +1,14 @@
+development:
+  sessions:
+    default:
+      database: blume_pages
+      hosts:
+        - localhost:27017
+production:
+  sessions:
+    default:
+      uri: <%= ENV['MONGOLAB_URI'] %>
+      options:
+        #safe: true
+        #skip_version_check: true
+        retry_interval: 0

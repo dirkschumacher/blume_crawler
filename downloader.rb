@@ -1,6 +1,6 @@
 require 'mongoid'
 require 'httparty'
-require_relative 'page.rb'
+require_relative 'models/page.rb'
 
 def check_and_download!
     # we will crawl from 2008-01-01 until today

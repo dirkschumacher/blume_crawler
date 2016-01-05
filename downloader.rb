@@ -5,6 +5,7 @@ require_relative 'models/page.rb'
 def check_and_download!
     # we will crawl from 2008-01-01 until today
     env = ENV['ENV'] == 'production' ? :production : :development
+    Mongo::Logger.logger.level = ::Logger::FATAL
     Mongoid.load!("./mongoid.yml", env)
 
     start_date = Date.new(2008, 1, 1)

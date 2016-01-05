@@ -4,6 +4,7 @@ require_relative 'models/page.rb'
 require_relative 'models/sensor_data.rb'
 
 env = ENV['ENV'] == 'production' ? :production : :development
+Mongo::Logger.logger.level = ::Logger::FATAL
 Mongoid.load!("./mongoid.yml", env)
 
 def extract_number(cell_text)

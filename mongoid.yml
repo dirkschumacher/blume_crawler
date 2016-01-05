@@ -1,11 +1,11 @@
 development:
-  sessions:
+  clients:
     default:
       database: blume_pages
       hosts:
         - localhost:27017
 production:
-  sessions:
+  clients:
     default:
       uri: <%= ENV['MONGOLAB_URI'] %>
       options:

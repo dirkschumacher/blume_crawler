@@ -1,3 +1,4 @@
+
 # blume_crawler
 
 A rake task to regularly download and save [particulates statistics in Berlin][particulates-statistics].
@@ -40,9 +41,16 @@ $ rake analyse
 ```
 
 
+## See also
+
+* [blume_messnet_api - An API for the BLUME data of Berlin][blume-messnet-api]
+
+
+
 [particulates-statistics]: http://www.stadtentwicklung.berlin.de/umwelt/luftqualitaet/de/messnetz/tageswerte/index.shtml
 [rvm]: https://rvm.io
 [rbenv]: https://github.com/sstephenson/rbenv
 [mongodb]: https://www.mongodb.org
 [mongoid]: http://mongoid.org
 [rake]: http://docs.seattlerb.org/rake/
+[blume-messnet-api]: https://github.com/dirkschumacher/blume_messnet_api
